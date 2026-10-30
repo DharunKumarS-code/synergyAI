@@ -1,0 +1,19 @@
+Loading SynergyAI embedding model...
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 1776.96it/s]
+INFO:     Started server process [37656]
+INFO:     Waiting for application startup.
+INFO:synergyai:Starting SynergyAI backend...
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+Embedding model loaded successfully.
+INFO:     127.0.0.1:52187 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54045 - "OPTIONS /chat HTTP/1.1" 200 OK
+INFO:synergyai:Received a chat request.
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|##########| 1/1 [00:00<00:00,  4.76it/s]Batches: 100%|##########| 1/1 [00:00<00:00,  4.74it/s]
+INFO:google_genai.models:AFC is enabled with max remote calls: 10.
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+INFO:google_genai.models:AFC is enabled with max remote calls: 10.
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+INFO:synergyai:Chat request completed successfully.
+Best retrieval score: 0.7331
+INFO:     127.0.0.1:54045 - "POST /chat HTTP/1.1" 200 OK
